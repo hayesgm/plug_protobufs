@@ -12,7 +12,7 @@ defmodule Plug.Parsers.Protobuf do
 
   def parse(conn, "application", subtype, _headers, opts) do
     if subtype == "x-protobuf" || String.ends_with?(subtype, "+protobuf") do
-      case conn.private[:protobuf] do
+      case conn.private[:protobuf] || conn.private[:req] do
         nil -> {:error, :no_protobuf_in_private, conn}
         protobuf ->
           conn
