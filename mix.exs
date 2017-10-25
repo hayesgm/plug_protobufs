@@ -5,6 +5,8 @@ defmodule PlugProtobufs.Mixfile do
     [app: :plug_protobufs,
      version: "0.1.0",
      elixir: "~> 1.3",
+     description: description(),
+     package: package(), 
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -29,7 +31,22 @@ defmodule PlugProtobufs.Mixfile do
   defp deps do
     [
       {:plug, "~> 1.3"},
-      {:exprotobuf, "~> 1.2"}
+      {:exprotobuf, "~> 1.2"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
+    ]
+  end
+
+  defp description do
+    """
+    A plug parser for Protobufs input. This creates a simple and easy way to accept Protobufs as the input to your plug projects.
+    """
+  end
+
+  defp package do
+    [
+      maintainers: ["Geoffrey Hayes", "Fahim Zahur"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/hayesgm/plug_protobufs"}
     ]
   end
 end
