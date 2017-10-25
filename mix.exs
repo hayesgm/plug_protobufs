@@ -30,8 +30,8 @@ defmodule PlugProtobufs.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:plug, "~> 1.3"},
-      {:exprotobuf, "~> 1.2"},
+      {:plug, "~> 1.4.3"},
+      {:protobuf, "~> 0.3.1"},
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
