@@ -31,7 +31,7 @@ defmodule PlugProtobufs.Mixfile do
   defp deps do
     [
       {:plug, "~> 1.4.3"},
-      {:protobuf, github: "hayesgm/protobuf-elixir", branch: "hayesgm/extensions"},
+      {:protobufex, github: "hayesgm/protobuf-elixir", branch: "hayesgm/extensions-ex"},
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
