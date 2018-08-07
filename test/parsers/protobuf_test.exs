@@ -2,7 +2,7 @@ defmodule PlugProtobufs.ProtobufTest do
   use ExUnit.Case, async: true
 
   defmodule Person do
-    use Protobufex, syntax: :proto3
+    use Protobuf, syntax: :proto3
 
     @type t :: %__MODULE__{
       name: String.t,

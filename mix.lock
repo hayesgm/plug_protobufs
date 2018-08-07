@@ -1,8 +1,9 @@
-%{"earmark": {:hex, :earmark, "1.2.3", "206eb2e2ac1a794aa5256f3982de7a76bf4579ff91cb28d0e17ea2c9491e46a4", [], [], "hexpm"},
-  "ex_doc": {:hex, :ex_doc, "0.18.1", "37c69d2ef62f24928c1f4fdc7c724ea04aecfdf500c4329185f8e3649c915baf", [], [{:earmark, "~> 1.1", [hex: :earmark, repo: "hexpm", optional: false]}], "hexpm"},
+%{
+  "earmark": {:hex, :earmark, "1.2.3", "206eb2e2ac1a794aa5256f3982de7a76bf4579ff91cb28d0e17ea2c9491e46a4", [:mix], [], "hexpm"},
+  "ex_doc": {:hex, :ex_doc, "0.18.1", "37c69d2ef62f24928c1f4fdc7c724ea04aecfdf500c4329185f8e3649c915baf", [:mix], [{:earmark, "~> 1.1", [hex: :earmark, repo: "hexpm", optional: false]}], "hexpm"},
   "exprotobuf": {:hex, :exprotobuf, "1.2.4", "861fa1761f01057fa073c5f24a88fff3619a1218b10202024e7f978f12111345", [:mix], [{:gpb, "~> 3.24", [hex: :gpb, optional: false]}]},
   "gpb": {:hex, :gpb, "3.26.6", "cd0b7e29d896bc7650ccbc4b6681db6cbec7a9c6d8a3d5e0e8b9bee454377597", [:make, :rebar], []},
   "mime": {:hex, :mime, "1.1.0", "01c1d6f4083d8aa5c7b8c246ade95139620ef8effb009edde934e0ec3b28090a", [:mix], [], "hexpm"},
   "plug": {:hex, :plug, "1.4.3", "236d77ce7bf3e3a2668dc0d32a9b6f1f9b1f05361019946aae49874904be4aed", [:mix], [{:cowboy, "~> 1.0.1 or ~> 1.1", [hex: :cowboy, repo: "hexpm", optional: true]}, {:mime, "~> 1.0", [hex: :mime, repo: "hexpm", optional: false]}], "hexpm"},
-  "protobuf": {:git, "https://github.com/hayesgm/protobuf-elixir.git", "7bd45f5106ed44f8882ef5a5974874c91c412c2b", [branch: "hayesgm/extensions-ex"]},
-  "protobufex": {:git, "https://github.com/hayesgm/protobuf-elixir.git", "f6f28676db44705c2b5f77e4060cd0e1efd9d10d", [branch: "hayesgm/extensions-ex"]}}
+  "protobuf_ex": {:hex, :protobuf_ex, "0.5.0", "98bfc3021667dbfcfc127e0b02dcea0432032cd74ce604695d01b07a39b8662f", [:mix], [], "hexpm"},
+}
