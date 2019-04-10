@@ -10,6 +10,10 @@ defmodule Plug.Parsers.Protobuf do
   @behaviour Plug.Parsers
   import Plug.Conn
 
+  def init(opts) do
+    opts
+  end
+
   def parse(conn, "application", subtype, _headers, opts) do
     if subtype == "x-protobuf" || String.ends_with?(subtype, "+protobuf") do
       case conn.private[:protobuf] || conn.private[:req] do

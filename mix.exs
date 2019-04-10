@@ -3,8 +3,8 @@ defmodule PlugProtobufs.Mixfile do
 
   def project do
     [app: :plug_protobufs,
-     version: "0.1.1",
-     elixir: "~> 1.3",
+     version: "0.1.2",
+     elixir: "~> 1.4",
      description: description(),
      package: package(), 
      build_embedded: Mix.env == :prod,
@@ -30,9 +30,9 @@ defmodule PlugProtobufs.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:plug, "~> 1.4.3"},
+      {:plug, "~> 1.8.0"},
       {:protobuf_ex, "~> 0.5.0"},
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:ex_doc, "~> 0.19", only: :dev}
     ]
   end
 
